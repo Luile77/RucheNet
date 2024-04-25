@@ -67,3 +67,10 @@ The mission of "RucheNet" is to provide an innovative, reliable platform for the
 
 ### TPL5110 Power Management Module
 - This module significantly enhances the system's energy efficiency. By regulating the power supplied to the sensors and the MKRWAN board, it ensures that the system consumes power only when necessary, extending the operational lifespan of the battery.
+
+### Acknowledgements
+This project is a collaborative effort by students at Polytech Sorbonne: Myriem Hajmi, Louis LE, Issam Bouhali
+ 
+### Contact
+For more information or inquiries, please contact us.
+
