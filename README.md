@@ -86,6 +86,24 @@ PCB Schematic At the heart of the project lies the PCB, which seamlessly integra
 1.  **Arduino IDE:** The Arduino Integrated Development Environment (IDE) serves as the primary software tool for programming and uploading code to the MKRWAN board. It offers a user-friendly interface and supports various programming languages such as C and C++. Additionally, the Arduino IDE provides access to a vast library of pre-built functions and examples, simplifying the development process for the MKRWAN board. Ensure that the necessary libraries for LoRaWAN communication and sensor interfacing are installed within the Arduino IDE environment.
     
 2.  **LoRaWAN Connectivity Setup:** To establish LoRaWAN connectivity, you need to configure the MKRWAN board to communicate with a LoRaWAN network server. This involves setting parameters such as device address, network session key, and application session key, which are provided by your chosen network provider (e.g., The Things Network - TTN). Additionally, you may need to configure regional parameters such as frequency bands and data rates to ensure compatibility with your target deployment region. Once configured, the MKRWAN board can transmit and receive data packets over the LoRaWAN network, enabling long-range wireless communication for your monitoring system.
+
+Beep Application Interface
+
+Open Ruche seamlessly integrates with the Beep application to provide a clear and user-friendly visualization of the collected hive data. The Beep interface, as depicted in the screenshot below, presents detailed graphs and analytics generated from various parameters monitored within the hive:
+
+![Beep](https://i.imgur.com/4FfOHgY.jpeg)
+This intuitive interface empowers beekeepers and researchers to monitor crucial parameters such as temperature, humidity, hive weight, and light exposure. Through interactive graphs and analytics, users gain valuable insights, facilitating informed decision-making for effective hive management.
+
+The Open Ruche system transmits data to the Beep platform via The Things Network (TTN), enabling comprehensive visualization and analysis of the beehive's conditions. To ensure seamless data transmission and proper formatting, follow the steps outlined below:
+
+1. **TTN Integration**: Configure the Open Ruche system to transmit data to The Things Network (TTN). Set up TTN with appropriate device registration and application configuration.
+
+2. **Data Formatting**: Ensure that the data transmitted from Open Ruche to TTN is properly formatted according to Beep's specifications. This includes structuring the payload to include relevant sensor readings and metadata.
+
+3. **TTN Integration with Beep**: Configure TTN to forward the collected data to the Beep application. Utilize TTN's integration features to seamlessly relay data to Beep for visualization and analysis.
+
+By following these steps, you can establish a robust connection between Open Ruche and the Beep application, enabling real-time monitoring and insightful analysis of hive conditions for improved beekeeping practices.
+
 # Acknowledgements
 This project is a collaborative effort by students at Polytech Sorbonne: Myriem Hajmi, Louis LE, Issam Bouhali
  
