@@ -1,3 +1,4 @@
+
 # RucheNet: Intelligent monitoring and management of Saint Cyr bee colonies
 
 
@@ -68,6 +69,23 @@ The mission of "RucheNet" is to provide an innovative, reliable platform for the
 ### TPL5110 Power Management Module
 - This module significantly enhances the system's energy efficiency. By regulating the power supplied to the sensors and the MKRWAN board, it ensures that the system consumes power only when necessary, extending the operational lifespan of the battery.
 
+## PCB Schematic
+PCB Schematic At the heart of the project lies the PCB, which seamlessly integrates all hardware components to ensure smooth communication and functionality. It boasts dedicated connectors for the MKRWAN 1310, interfaces for an array of sensors, and the TPL5110 module for power management. Meticulously designed, the layout of the PCB accommodates the system's requirements, offering a reliable and efficient platform for the Open Ruche monitoring system.
+
+**Key Features:** MKRWAN 1310 Interface: The PCB features a dedicated interface for effortless connection with the MKRWAN 1310 board, ensuring compatibility and efficient data transmission.
+
+**Sensor Connections:** Accommodating multiple sensors, the PCB allows for the collection of crucial data. Detailed interfaces for each sensor type are provided, enabling precise measurements.
+
+**TPL5110 Integration:** The PCB seamlessly integrates the TPL5110 module to enhance power management and optimize energy consumption, contributing to the project's low-power operation.
+
+![PCB](https://i.imgur.com/5JQnaoT.jpeg)
+![PCB2](https://i.imgur.com/4gsJzIF.jpeg)
+
+## Software Requirements
+
+1.  **Arduino IDE:** The Arduino Integrated Development Environment (IDE) serves as the primary software tool for programming and uploading code to the MKRWAN board. It offers a user-friendly interface and supports various programming languages such as C and C++. Additionally, the Arduino IDE provides access to a vast library of pre-built functions and examples, simplifying the development process for the MKRWAN board. Ensure that the necessary libraries for LoRaWAN communication and sensor interfacing are installed within the Arduino IDE environment.
+    
+2.  **LoRaWAN Connectivity Setup:** To establish LoRaWAN connectivity, you need to configure the MKRWAN board to communicate with a LoRaWAN network server. This involves setting parameters such as device address, network session key, and application session key, which are provided by your chosen network provider (e.g., The Things Network - TTN). Additionally, you may need to configure regional parameters such as frequency bands and data rates to ensure compatibility with your target deployment region. Once configured, the MKRWAN board can transmit and receive data packets over the LoRaWAN network, enabling long-range wireless communication for your monitoring system.
 # Acknowledgements
 This project is a collaborative effort by students at Polytech Sorbonne: Myriem Hajmi, Louis LE, Issam Bouhali
  
